@@ -1,8 +1,9 @@
 import sys
 from time import sleep
-
+import requests
 if __name__ == "__main__":
-    my_input = int(sys.argv[1])
-    for num in range(my_input):
-        print(num, num * num)
+    my_urls = join(sys.argv[1:]).split(',')
+    for url in my_urls:
+        data=requests.get(url)
+        print(data.content)
         sleep(1)
