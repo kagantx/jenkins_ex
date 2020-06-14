@@ -2,5 +2,5 @@ FROM python:3.6-jessie
 
 WORKDIR /opt
 ADD / /opt
-ENTRYPOINT ["python","-u","/opt/main.py","500"]
+ENTRYPOINT ["python","-u","/opt/main.py","6"]
 
