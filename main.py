@@ -7,5 +7,4 @@ if __name__ == "__main__":
     for url in my_urls:
         print(url)
         data=requests.get(url)
-        print(data.content)
         sleep(1)
