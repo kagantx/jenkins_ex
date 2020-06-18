@@ -6,5 +6,5 @@ if __name__ == "__main__":
     my_urls=urls.split(',')
     for url in my_urls:
         print(url)
-        data=requests.get(url)
+        data=requests.get(url.strip())
         sleep(1)
